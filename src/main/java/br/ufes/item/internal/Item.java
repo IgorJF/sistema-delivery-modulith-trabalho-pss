@@ -40,4 +40,8 @@ public class Item {
     public void setQuantidade(int quantidade) {
         this.quantidade = quantidade;
     }
+
+    public void setId(long id) {
+        this.id = id;
+    }
 }
