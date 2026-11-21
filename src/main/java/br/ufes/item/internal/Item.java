@@ -1,12 +1,16 @@
 package br.ufes.item.internal;
 
 public class Item {
+    private long id;
     private String descricao;
     private double preco;
+    private int quantidade;
 
-    public Item(String descricao, double preco) {
+    public Item(long id, String descricao, double preco, int quantidade) {
+        this.id = id;
         this.descricao = descricao;
         this.preco = preco;
+        this.quantidade = quantidade;
     }
 
     public String getDescricao() {
@@ -15,5 +19,13 @@ public class Item {
 
     public double getPreco() {
         return preco;
+    }
+
+    public int getQuantidade() {
+        return quantidade;
+    }
+
+    public long getId() {
+        return id;
     }
 }

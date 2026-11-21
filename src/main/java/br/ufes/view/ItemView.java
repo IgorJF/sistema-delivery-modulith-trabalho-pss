@@ -1,5 +1,10 @@
 package br.ufes.view;
 
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JTable;
+import javax.swing.JTextField;
+
 /**
  *
  * @author igorj
@@ -24,8 +29,77 @@ public class ItemView extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        txtQuantidade = new javax.swing.JTextField();
+        txtDescricao = new javax.swing.JTextField();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        tblItens = new javax.swing.JTable();
+        txtPreco = new javax.swing.JTextField();
+        lblQuantidade = new javax.swing.JLabel();
+        lblDescricao = new javax.swing.JLabel();
+        lblPreco = new javax.swing.JLabel();
+        lblTituloItens = new javax.swing.JLabel();
+        btnSalvar = new javax.swing.JButton();
+        lblModo = new javax.swing.JLabel();
+        btnEditar = new javax.swing.JButton();
+        btnNovo = new javax.swing.JButton();
+        btnExcluir = new javax.swing.JButton();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        getContentPane().add(txtQuantidade, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 180, 250, -1));
+        getContentPane().add(txtDescricao, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 60, 250, -1));
+
+        tblItens.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "ID", "Descricao", "Preço", "Quantidade"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.Long.class, java.lang.String.class, java.lang.Double.class, java.lang.Integer.class
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+        });
+        jScrollPane1.setViewportView(tblItens);
+
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 220, 560, 220));
+        getContentPane().add(txtPreco, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, 250, -1));
+
+        lblQuantidade.setText("Quantidade:");
+        getContentPane().add(lblQuantidade, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, 80, -1));
+
+        lblDescricao.setText("Descrição:");
+        getContentPane().add(lblDescricao, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, 80, -1));
+
+        lblPreco.setText("Preço:");
+        getContentPane().add(lblPreco, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, 80, -1));
+
+        lblTituloItens.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        lblTituloItens.setText("Gerenciamento de Itens");
+        getContentPane().add(lblTituloItens, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 0, -1, -1));
+
+        btnSalvar.setText("Salvar");
+        btnSalvar.setEnabled(false);
+        getContentPane().add(btnSalvar, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 130, -1, -1));
+
+        lblModo.setText("Modo: Visualização");
+        getContentPane().add(lblModo, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 30, -1, -1));
+
+        btnEditar.setText("Editar");
+        btnEditar.setEnabled(false);
+        getContentPane().add(btnEditar, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 190, -1, -1));
+
+        btnNovo.setText("Novo");
+        getContentPane().add(btnNovo, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 100, -1, -1));
+
+        btnExcluir.setText("Excluir");
+        btnExcluir.setEnabled(false);
+        getContentPane().add(btnExcluir, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 160, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -33,8 +107,82 @@ public class ItemView extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
+
+    public JButton getBtnEditar() {
+        return btnEditar;
+    }
+
+    public JButton getBtnExcluir() {
+        return btnExcluir;
+    }
+
+    public JButton getBtnNovo() {
+        return btnNovo;
+    }
+
+    public JButton getBtnSalvar() {
+        return btnSalvar;
+    }
+
+    public JLabel getLblModo() {
+        return lblModo;
+    }
+
+    public JTable getTblItens() {
+        return tblItens;
+    }
+
+    public JTextField getTxtDescricao() {
+        return txtDescricao;
+    }
+
+    public JTextField getTxtPreco() {
+        return txtPreco;
+    }
+
+    /**
+     * @param args the command line arguments
+     */
+    public JTextField getTxtQuantidade() {
+        return txtQuantidade;
+    }
+
+    public void setLblModo(JLabel lblModo) {
+        this.lblModo = lblModo;
+    }
+
+    public void setTblItens(JTable tblItens) {
+        this.tblItens = tblItens;
+    }
+
+    public void setTxtDescricao(JTextField txtDescricao) {
+        this.txtDescricao = txtDescricao;
+    }
+
+    public void setTxtPreco(JTextField txtPreco) {
+        this.txtPreco = txtPreco;
+    }
+
+    public void setTxtQuantidade(JTextField txtQuantidade) {
+        this.txtQuantidade = txtQuantidade;
+    }
+    
     
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnEditar;
+    private javax.swing.JButton btnExcluir;
+    private javax.swing.JButton btnNovo;
+    private javax.swing.JButton btnSalvar;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JLabel lblDescricao;
+    private javax.swing.JLabel lblModo;
+    private javax.swing.JLabel lblPreco;
+    private javax.swing.JLabel lblQuantidade;
+    private javax.swing.JLabel lblTituloItens;
+    private javax.swing.JTable tblItens;
+    private javax.swing.JTextField txtDescricao;
+    private javax.swing.JTextField txtPreco;
+    private javax.swing.JTextField txtQuantidade;
     // End of variables declaration//GEN-END:variables
 }
