@@ -32,6 +32,7 @@ public class TelaPrincipalView extends javax.swing.JFrame {
         btnPedidos = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(526, 292));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnEntregas.setText("Gerenciar Entregas");

@@ -24,6 +24,10 @@ public abstract class ItemPresenterState {
     public void excluir() {
         throw new RuntimeException("Excluir nao permitida nesse estado");
     }
+    
+    public void cancelar(){
+        throw new RuntimeException("Cancelar nao permitida nesse estado");
+    }
 }
 
 
