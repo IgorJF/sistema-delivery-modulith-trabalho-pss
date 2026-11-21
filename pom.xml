@@ -22,6 +22,13 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.modulith</groupId>
+            <artifactId>spring-modulith-bom</artifactId>
+            <version>2.2.0</version>
+            <scope>import</scope>
+            <type>pom</type>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
