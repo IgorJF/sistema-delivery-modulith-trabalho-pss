@@ -1,7 +1,5 @@
 package br.ufes.view;
 
-import javax.swing.JButton;
-
 /**
  *
  * @author igorj
@@ -26,30 +24,8 @@ public class TelaPrincipalView extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        btnEntregas = new javax.swing.JButton();
-        btnItem = new javax.swing.JButton();
-        btnClientes = new javax.swing.JButton();
-        btnPedidos = new javax.swing.JButton();
-
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        btnEntregas.setText("Gerenciar Entregas");
-        btnEntregas.setPreferredSize(new java.awt.Dimension(125, 23));
-        getContentPane().add(btnEntregas, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, 150, -1));
-
-        btnItem.setText("Gerenciar Itens");
-        btnItem.setPreferredSize(new java.awt.Dimension(125, 23));
-        getContentPane().add(btnItem, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, 150, -1));
-
-        btnClientes.setText("Gerenciar Clientes");
-        getContentPane().add(btnClientes, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, 150, -1));
-
-        btnPedidos.setText("Criar Pedido");
-        btnPedidos.setMaximumSize(new java.awt.Dimension(129, 23));
-        btnPedidos.setMinimumSize(new java.awt.Dimension(129, 23));
-        btnPedidos.setPreferredSize(new java.awt.Dimension(129, 23));
-        getContentPane().add(btnPedidos, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 70, 150, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -57,32 +33,8 @@ public class TelaPrincipalView extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
-
-    public JButton getBtnClientes() {
-        return btnClientes;
-    }
-
-    public JButton getBtnEntregas() {
-        return btnEntregas;
-    }
-
-    public JButton getBtnItem() {
-        return btnItem;
-    }
-
-    /**
-     * @param args the command line arguments
-     */
-    public JButton getBtnPedidos() {
-        return btnPedidos;
-    }
-    
     
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnClientes;
-    private javax.swing.JButton btnEntregas;
-    private javax.swing.JButton btnItem;
-    private javax.swing.JButton btnPedidos;
     // End of variables declaration//GEN-END:variables
 }
