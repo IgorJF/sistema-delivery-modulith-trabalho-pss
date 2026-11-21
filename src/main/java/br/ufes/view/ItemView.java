@@ -47,7 +47,11 @@ public class ItemView extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        txtQuantidade.setEditable(false);
         getContentPane().add(txtQuantidade, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 180, 250, -1));
+
+        txtDescricao.setEditable(false);
         getContentPane().add(txtDescricao, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 60, 250, -1));
 
         tblItens.setModel(new javax.swing.table.DefaultTableModel(
@@ -69,6 +73,8 @@ public class ItemView extends javax.swing.JFrame {
         jScrollPane1.setViewportView(tblItens);
 
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 220, 560, 220));
+
+        txtPreco.setEditable(false);
         getContentPane().add(txtPreco, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, 250, -1));
 
         lblQuantidade.setText("Quantidade:");
@@ -143,6 +149,10 @@ public class ItemView extends javax.swing.JFrame {
 
     public JTextField getTxtPreco() {
         return txtPreco;
+    }
+
+    public JLabel getLblModo() {
+        return lblModo;
     }
 
     /**
