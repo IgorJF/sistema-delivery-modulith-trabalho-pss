@@ -38,13 +38,14 @@ public class ItemView extends javax.swing.JFrame {
         lblDescricao = new javax.swing.JLabel();
         lblPreco = new javax.swing.JLabel();
         lblTituloItens = new javax.swing.JLabel();
-        btnSalvar = new javax.swing.JButton();
+        btnCancelar = new javax.swing.JButton();
         lblModo = new javax.swing.JLabel();
         btnEditar = new javax.swing.JButton();
         btnNovo = new javax.swing.JButton();
         btnExcluir = new javax.swing.JButton();
+        btnSalvar = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         getContentPane().add(txtQuantidade, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 180, 250, -1));
         getContentPane().add(txtDescricao, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 60, 250, -1));
@@ -83,23 +84,27 @@ public class ItemView extends javax.swing.JFrame {
         lblTituloItens.setText("Gerenciamento de Itens");
         getContentPane().add(lblTituloItens, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 0, -1, -1));
 
-        btnSalvar.setText("Salvar");
-        btnSalvar.setEnabled(false);
-        getContentPane().add(btnSalvar, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 130, -1, -1));
+        btnCancelar.setText("Cancelar");
+        btnCancelar.setEnabled(false);
+        getContentPane().add(btnCancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 130, 90, -1));
 
         lblModo.setText("Modo: Visualização");
         getContentPane().add(lblModo, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 30, -1, -1));
 
         btnEditar.setText("Editar");
         btnEditar.setEnabled(false);
-        getContentPane().add(btnEditar, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 190, -1, -1));
+        getContentPane().add(btnEditar, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 190, 90, -1));
 
         btnNovo.setText("Novo");
-        getContentPane().add(btnNovo, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 100, -1, -1));
+        getContentPane().add(btnNovo, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 70, 90, -1));
 
         btnExcluir.setText("Excluir");
         btnExcluir.setEnabled(false);
-        getContentPane().add(btnExcluir, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 160, -1, -1));
+        getContentPane().add(btnExcluir, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 160, 90, -1));
+
+        btnSalvar.setText("Salvar");
+        btnSalvar.setEnabled(false);
+        getContentPane().add(btnSalvar, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 100, 90, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -107,6 +112,10 @@ public class ItemView extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
+
+    public JButton getBtnCancelar() {
+        return btnCancelar;
+    }
 
     public JButton getBtnEditar() {
         return btnEditar;
@@ -122,10 +131,6 @@ public class ItemView extends javax.swing.JFrame {
 
     public JButton getBtnSalvar() {
         return btnSalvar;
-    }
-
-    public JLabel getLblModo() {
-        return lblModo;
     }
 
     public JTable getTblItens() {
@@ -166,10 +171,12 @@ public class ItemView extends javax.swing.JFrame {
     public void setTxtQuantidade(JTextField txtQuantidade) {
         this.txtQuantidade = txtQuantidade;
     }
-    
+
+   
     
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnCancelar;
     private javax.swing.JButton btnEditar;
     private javax.swing.JButton btnExcluir;
     private javax.swing.JButton btnNovo;
