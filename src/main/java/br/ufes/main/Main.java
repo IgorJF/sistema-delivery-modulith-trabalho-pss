@@ -1,17 +1,24 @@
 package br.ufes.main;
 
-import org.springframework.boot.SpringApplication;
+import br.ufes.presenter.TelaPrincipalPresenter;
+import javax.swing.SwingUtilities;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.context.ConfigurableApplicationContext;
 
-@SpringBootApplication
-public class Main implements CommandLineRunner{
-    public static void main(String[] args){
-        SpringApplication.run(Main.class, args);
-    }
-    
-    @Override
-    public void run(String... args) {
-        System.out.println("Hello World!");
+@SpringBootApplication(scanBasePackages = "br.ufes")
+public class Main {
+
+    public static void main(String[] args) {
+        ConfigurableApplicationContext context = new SpringApplicationBuilder(Main.class)
+                .headless(false)
+                .run(args);
+
+        SwingUtilities.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                context.getBean(TelaPrincipalPresenter.class);
+            }
+        });
     }
 }
