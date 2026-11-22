@@ -1,4 +1,4 @@
-package br.ufes.main;
+package br.ufes;
 
 import br.ufes.presenter.TelaPrincipalPresenter;
 import javax.swing.SwingUtilities;
@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.context.ConfigurableApplicationContext;
 
-@SpringBootApplication(scanBasePackages = "br.ufes")
+@SpringBootApplication
 public class Main {
 
     public static void main(String[] args) {

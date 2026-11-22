@@ -14,8 +14,8 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>21</maven.compiler.release>
-        <exec.mainClass>br.ufes.main.Main</exec.mainClass>
-        <start-class>br.ufes.main.Main</start-class>
+        <exec.mainClass>br.ufes.Main</exec.mainClass>
+        <start-class>br.ufes.Main</start-class>
     </properties>
     <dependencies>
         <dependency>
