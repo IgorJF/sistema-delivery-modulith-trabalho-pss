@@ -28,4 +28,11 @@ public class ItemDTO {
     public long getId() {
         return id;
     }
+    
+    @Override
+    public String toString(){
+        
+       return "#" + id + " - " + descricao + String.format(" (R$ %.2f) - Estoque: %d", preco, quantidade);
+        
+    }
 }

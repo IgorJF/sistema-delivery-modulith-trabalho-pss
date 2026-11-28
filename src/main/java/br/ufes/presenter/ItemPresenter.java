@@ -106,6 +106,7 @@ public class ItemPresenter {
                 }
             }
         });
+        view.setLocationRelativeTo(null);
         view.setVisible(true);
     }
 

@@ -59,7 +59,7 @@ public class ClienteView extends javax.swing.JFrame {
 
         txtNome.setEditable(false);
 
-        lblEndereco.setText("Endereço");
+        lblEndereco.setText("Endereço:");
 
         txtEndereco.setEditable(false);
 
